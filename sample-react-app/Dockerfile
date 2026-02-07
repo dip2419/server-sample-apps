@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV VITE_API_URL=https://app-deep.zorai.cloud
+ENV VITE_API_URL=https://api-deep.zorai.cloud
 RUN npm run build
 
 FROM nginx:alpine
